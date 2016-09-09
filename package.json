@@ -1,11 +1,13 @@
 {
-  "name": "ts-mixin",
+  "name": "@alizurchik/ts-mixin",
   "version": "1.0.0",
   "description": "Mixin function that brings power of mixin to TypeScript without headache",
   "main": "index.js",
   "scripts": {
     "test": "npm run build && ava",
-    "build": "tsc"
+    "build": "tsc",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "mixin",
