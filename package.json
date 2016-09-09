@@ -1,0 +1,37 @@
+{
+  "name": "ts-mixin",
+  "version": "1.0.0",
+  "description": "Mixin function that brings power of mixin to TypeScript without headache",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && ava",
+    "build": "tsc"
+  },
+  "keywords": [
+    "mixin",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Alexey Lizurchik <al.lizurchik@gmail.com> (http://likerrr.ru)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "typescript": "^2.0.2"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "ava": {
+    "verbose": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": {
+      "presets": [
+        "es2015"
+      ]
+    }
+  }
+}
