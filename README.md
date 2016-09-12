@@ -25,7 +25,7 @@ applyMixins(SmartObject, [Disposable, Activatable]);
 ```
 
 Thanks to [falsandtru](https://github.com/falsandtru) I found [his workaround](https://github.com/Microsoft/TypeScript/issues/2919#issuecomment-225398629)
-and wrapped it in package to use it in any of your projects until TS (or tc39?) came up with 
+and wrapped it in package to use it in any of your projects until [TS](https://github.com/Microsoft/TypeScript/issues/2919) (or tc39?) came up with 
 more suitable solution.
 
 ### Usage example
@@ -149,6 +149,8 @@ X
 ```
 
 ### Known limitation
+
+#### Access to static properties
 TypeScript compiler will complain if you try to access static property via dot. Use square brackets instead:
 
 ```javascript
@@ -161,3 +163,7 @@ But autocomplete feature still works:
 ![](docs/autocomplete_static_prop.gif)
 
 If someone knows a workaround for this issue PR is highly welcome :exclamation:
+
+#### Mixins + Extending
+You can't extend and use mixins at the same time. It means your class could either extend one class
+or be mixed with other class(es). Again, if someone knows a workaround, PRs are accepted.

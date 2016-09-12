@@ -8,36 +8,43 @@ test('apply mixins', t => {
       t.is(++cnt, 1);
       t.is(n, 0);
     }
+
     static a = 'A';
     ap = 'a';
+
     am() {
       return this.ap;
     }
   }
   class B {
-  constructor(n: number) {
-    t.is(++cnt, 2);
-    t.is(n, 0);
-  }
-  static b = 'B';
-  bp = 'b';
-  bm() {
-    return this.bp;
-  }
+    constructor(n: number) {
+      t.is(++cnt, 2);
+      t.is(n, 0);
+    }
+
+    static b = 'B';
+    bp = 'b';
+
+    bm() {
+      return this.bp;
+    }
   }
   interface AB extends B, A {}
   class X extends Mixin<AB>(B, A) {
-  constructor(n: number) {
-    super(n);
-    t.is(++cnt, 3);
-    t.is(n, 0);
+    constructor(n: number) {
+      super(n);
+      t.is(++cnt, 3);
+      t.is(n, 0);
+    }
+
+    static x = 'X';
+    xp = 'x';
+
+    xm() {
+      return this.xp;
+    }
   }
-  static x = 'X';
-  xp = 'x';
-  xm() {
-    return this.xp;
-  }
-  }
+
   //
 
   let cnt = 0;
