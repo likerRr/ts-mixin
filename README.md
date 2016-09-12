@@ -166,4 +166,6 @@ If someone knows a workaround for this issue PR is highly welcome :exclamation:
 
 #### Mixins + Extending
 You can't extend and use mixins at the same time. It means your class could either extend one class
-or be mixed with other class(es). Again, if someone knows a workaround, PRs are accepted.
+or be mixed with other class(es). Again, if someone knows a workaround, PRs are accepted. 
+
+If you really need it you should use [TS's solution](https://www.typescriptlang.org/docs/handbook/mixins.html).
