@@ -1,6 +1,6 @@
 {
   "name": "@alizurchik/ts-mixin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mixin function that brings power of mixin to TypeScript without headache",
   "main": "index.js",
   "scripts": {
