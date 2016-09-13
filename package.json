@@ -9,10 +9,21 @@
     "preversion": "npm test",
     "postversion": "git push && git push --tags"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/likerRr/ts-mixin"
+  },
+  "bugs": {
+    "url": "https://github.com/likerRr/ts-mixin/issues"
+  },
   "keywords": [
     "mixin",
     "typescript",
-    "javascript"
+    "javascript",
+    "ts",
+    "composition",
+    "extend",
+    "inheritance"
   ],
   "author": "Alexey Lizurchik <al.lizurchik@gmail.com> (http://likerrr.ru)",
   "license": "MIT",
